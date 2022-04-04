@@ -10,4 +10,4 @@ fun readInput(fileName: String) = File(inputPath, "$fileName.txt").readLines()
 /**
  * Returns an integer list from [fileName].
  */
-fun readInputInt(fileName: String) = readInput(fileName).map { it.trim().toInt() }
+fun readInputToInt(fileName: String) = readInput(fileName).map { it.trim().toInt() }
