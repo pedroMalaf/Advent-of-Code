@@ -11,3 +11,5 @@ fun readInput(fileName: String) = File(inputPath, "$fileName.txt").readLines()
  * Returns an integer list from [fileName].
  */
 fun readInputToInt(fileName: String) = readInput(fileName).map { it.trim().toInt() }
+
+fun makePairs(input: List<String>) = input.map { it.split(' ') }.map { (a, b) -> a to b.toInt() }
